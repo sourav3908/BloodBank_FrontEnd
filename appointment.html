@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="handrop-removebg-preview.png">
+    <title>Appointment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main_bg {
+            background-image: url(heartwithbloodbankbothside.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            max-width: 1280px;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .form {
+            width: 650px;
+        }
+
+        .form-text {
+            text-align: center;
+            margin: 0 0 40px 0;
+        }
+
+        .form-text h1 span img {
+            margin: 0 10px;
+
+        }
+
+        .form-text h1 {
+            color: black;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .form-text p {
+            color: rgb(9, 9, 9);
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: large;
+        }
+
+        .main-form div {
+            margin: 10px 10px;
+            width: 300px;
+            display: inline-block;
+        }
+
+        .main-form div input {
+            width: 100%;
+            font-family: 'Akaya Telivigala', cursive;
+            background: none;
+            border: 1px solid green;
+            font-size: 20px;
+            color: rgb(18, 18, 18);
+            outline: none;
+            padding: 3px 0 3px 10px;
+            margin-top: 10px;
+        }
+
+        .main-form div select {
+            width: 104%;
+            font-family: 'Akaya Telivigala', cursive;
+            background: none;
+            border: 1px solid green;
+            font-size: 20px;
+            color: rgb(18, 18, 18);
+            outline: none;
+            padding: 3px 0 3px 10px;
+            margin-top: 10px;
+        }
+
+        .main-form div span {
+            width: 100%;
+            font-family: 'Akaya Telivigala', cursive;
+            color: rgb(18, 18, 18);
+            font-size: 25px;
+        }
+
+        #submit {
+            width: 100%;
+            text-align: center;
+        }
+
+        #submit input {
+            font-family: 'Akaya Telivigala', cursive;
+            width: 200px;
+            background-color: rgb(19, 187, 30) !important;
+            color: black !important;
+            transition: all .3s;
+        }
+
+        #submit input:hover {
+            font-family: 'Akaya Telivigala', cursive;
+            width: 200px;
+            background-color: rgb(212, 110, 110) !important;
+            color: rgb(12, 12, 12) !important;
+        }
+
+        #submit input:active {
+            font-size: 19px;
+            background-color: rgb(46, 20, 5) !important;
+            color: rgb(12, 12, 12) !important;
+        }
+
+
+        @media screen and (max-width:710px) {
+            .main-form {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="art-1.png" alt=""></span>Book Now <span><img src="art-1.png" alt=""></span></h1>
+            
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get">
+                <div>
+                    <span>Full Name*</span>
+                    <input type="text" name="name" id="name" placeholder="Enter Full name" required>
+                </div>
+                <div>
+                    <span>Email Address*</span>
+                    <input type="email" name="email" id="name" placeholder="Enter Email Address" required>
+                </div>
+                <div>
+                    
+                    <span>Gender*</span>
+                    <select name="people" id="people" required>
+                        <option value="">
+                            Select Gender
+                        </option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                        
+                    </select>
+                    
+                </div>
+                <div>
+                    <span>Time*</span>
+                    <input type="text" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>Appointment Date*</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Contact Number*</span>
+                    <input type="number" name="number" id="number" placeholder="Enter Contact Number" required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

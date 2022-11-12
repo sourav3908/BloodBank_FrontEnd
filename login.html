@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .page{
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%),url(bloodinhandtopright.jpg);
+            background-position: center;
+            background-size: cover;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+        .content {
+            width: 2500px;
+            height: 900px;
+            margin: auto;
+            color: rgb(31, 33, 35);
+            position: relative;
+            display: flex;
+            text-align: center;
+        }
+
+        .form {
+            width: 295px;
+            height: 434px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+            position: absolute;
+            top: 80px;
+            right: 870px;
+            border-radius: 10px;
+            padding: 25px;
+
+        }
+
+        .form h2 {
+            width: 276px;
+            font-family: sans-serif;
+            text-align: center;
+            color: green;
+            font-size: 22px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;
+        }
+
+        .form input {
+            width: 265px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid yellowgreen;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: aliceblue;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn1 {
+            width: 275px;
+            height: 40px;
+            background: orange;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: 0.4s ease;
+        }
+
+        .btn1:hover {
+            background: antiquewhite;
+            color: orange;
+        }
+
+        .btn1 a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .form .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            padding-top: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        .form .link a {
+            text-decoration: none;
+            color: orange;
+        }
+
+        .liw {
+            padding-top: 2px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 21px;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .icons ion-icon {
+            color: white;
+            font-size: 35px;
+            padding-left: 14px;
+            padding-top: 5px;
+            transition: 0.3s;
+        }
+
+        .icons ion-icon:hover {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="content">
+            <!-- <h1>Be the reason for someone’s heartbeat.</h1> -->
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email here">
+                <!-- <input type="number" name="number" placeholder="Enter Number here"> -->
+                <input type="password" name="" placeholder="Enter Password here">
+                <button class="btn1"><a href="#">Login</a></button>
+
+                <p class="link">Don't have an account<br>
+                    <a href="#">Sign up here</a>
+                </p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
